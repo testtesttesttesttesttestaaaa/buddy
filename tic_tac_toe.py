@@ -8,8 +8,7 @@ from typing import NamedTuple
 
 class Player(NamedTuple):
     label: str
-    color: str
-
+    color: st
 
 class Move(NamedTuple):
     row: int
