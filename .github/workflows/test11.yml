@@ -1,6 +1,18 @@
-steps:
-- name: Install dev dependencies
-  run: pip install -r flake8
+name: Test11
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.7", "3.8", "3.9"]
+        
+    steps:
+      - name: Install dev dependencies
+        run: pip install -r flake8
   
-- name: Link with flake8
-  run: flake8 .
+      - name: Link with flake8
+        run: flake8 .
