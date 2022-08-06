@@ -6,7 +6,7 @@ from tkinter import font
 from typing import NamedTuple
 
 
-class Player(NamedTuple):
+class Playyier(NamedTuple):
     label: str
     color: str
 
@@ -18,8 +18,8 @@ class Move(NamedTuple):
 
 BOARD_SIZE = 3
 DEFAULT_PLAYERS = (
-    Player(label="X", color="blue"),
-    Player(label="O", color="green"),
+    Playyier(label="X", color="blue"),
+    Playyier(label="O", color="green"),
 )
 
 
