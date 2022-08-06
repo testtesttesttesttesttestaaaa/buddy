@@ -1,0 +1,6 @@
+steps:
+- name: Install dev dependencies
+  run: pip install -r flake8
+  
+- name: Link with flake8
+  run: flake8 .
